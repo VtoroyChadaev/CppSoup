@@ -1,0 +1,75 @@
+\doxysection{input.\+hpp}
+\hypertarget{input_8hpp_source}{}\label{input_8hpp_source}\index{/home/students/m/malakhov.am/oop2024/1/src/input/input.hpp@{/home/students/m/malakhov.am/oop2024/1/src/input/input.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ INPUT\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ INPUT\_HPP}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceinput}{input}}\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }end\_code\ =\ std::string;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keywordtype}{void}\ clear\_stream(std::istream\ \&is);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{template}\ <\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00029\ T\ \mbox{\hyperlink{namespaceinput_a87651fce1b6b89cc95f46486c9105660}{get\_num}}(std::istream\ \&is,\ std::ostream\ \&os,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ T\ min\ =\ std::numeric\_limits<T>::lowest(),}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ T\ max\ =\ std::numeric\_limits<T>::max(),}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&prompt\ =\ \textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{00033\ \ \ T\ number;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (prompt\ !=\ \textcolor{stringliteral}{"{}"{}})\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ os\ <<\ prompt\ <<\ std::endl;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ is\ >>\ number;}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{if}\ (is.eof())\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(\textcolor{stringliteral}{"{}\string^D"{}});}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{if}\ (is.bad())\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::runtime\_error(std::string(\textcolor{stringliteral}{"{}BAD:"{}})\ +\ std::strerror(errno));}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordflow}{if}\ (is.fail())\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ is.clear();}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ std::string\ message;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ is\ >>\ message;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (message\ ==\ \textcolor{stringliteral}{"{}end"{}})\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ clear\_stream(is);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ input::end\_code(\textcolor{stringliteral}{"{}end"{}});}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ clear\_stream(is);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}INP\ FAIL.\ TRY\ AGAIN"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordflow}{if}\ (number\ <\ min\ ||\ number\ >\ max)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ clear\_stream(is);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ os\ <<\ \textcolor{stringliteral}{"{}INP\ FAIL.\ TRY\ AGAIN"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ clear\_stream(is);}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordflow}{return}\ number;}
+\DoxyCodeLine{00073\ \ \ \}}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ clear\_stream(std::istream\ \&is)\ \{}
+\DoxyCodeLine{00077\ \ \ is.ignore(std::numeric\_limits<std::streamsize>::max(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00078\ \}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \}\ \textcolor{comment}{//\ namespace\ input}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,179 @@
+\doxysection{vector Namespace Reference}
+\hypertarget{namespacevector}{}\label{namespacevector}\index{vector@{vector}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvector_1_1Vector}{Vector}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespacevector_a1c5035fe7ab762b932a474da4ae38b53}\label{namespacevector_a1c5035fe7ab762b932a474da4ae38b53} 
+{\footnotesize template$<$class T $>$ }\\std\+::string\+\_\+view {\bfseries get\+\_\+xml\+\_\+content} (const std\+::string \&open\+\_\+tag, const std\+::string \&close\+\_\+tag, const T \&line)
+\item 
+\Hypertarget{namespacevector_a2eea8eeec28e1d4a3bf4b80ed9b2b641}\label{namespacevector_a2eea8eeec28e1d4a3bf4b80ed9b2b641} 
+\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} {\bfseries get\+\_\+all\+\_\+xml\+\_\+content} (const std\+::string \&open\+\_\+tag, const std\+::string \&close\+\_\+tag, std\+::string\+\_\+view \&line)
+\item 
+\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacevector_a3219b40348e6b235c835ae7da213a8f5}{create}} (const size\+\_\+t len)
+\begin{DoxyCompactList}\small\item\em creates struct \doxylink{structvector_1_1Vector}{Vector} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacevector_afb600355d32cc7dc20aa5e2e31bfc89f}{input}} (std\+::istream \&is, std\+::ostream \&os, \mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&vector)
+\begin{DoxyCompactList}\small\item\em fills vector with data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{namespacevector_a9b0477fdacc345c82ce7048544aa2fc2}{append}} (\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&vector, const int value)
+\begin{DoxyCompactList}\small\item\em pushes value to the end of vector \end{DoxyCompactList}\item 
+\Hypertarget{namespacevector_a00c243d19c88cf62e0d4ce81e08b8dff}\label{namespacevector_a00c243d19c88cf62e0d4ce81e08b8dff} 
+void {\bfseries print} (std\+::ostream \&os, const \mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&vector)
+\item 
+void \mbox{\hyperlink{namespacevector_a0c9705d65f9bd7780fdee6603d269fae}{erase}} (\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*}vector)
+\begin{DoxyCompactList}\small\item\em erases struct \doxylink{structvector_1_1Vector}{Vector} \end{DoxyCompactList}\item 
+\Hypertarget{namespacevector_afdafb7e34a5b503dd3ce50b8b29ddd25}\label{namespacevector_afdafb7e34a5b503dd3ce50b8b29ddd25} 
+\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} {\bfseries str\+\_\+to\+\_\+v} (const char \texorpdfstring{$\ast$}{*}line, const std\+::string \&arr\+\_\+name, const std\+::string \&elem\+\_\+name)
+\begin{DoxyCompactList}\small\item\em overloading of str\+\_\+to\+\_\+v for const char \texorpdfstring{$\ast$}{*} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacevector_a754e5ffcf97a33ece642622e62cb1858}{str\+\_\+to\+\_\+v}} (const std\+::string \&line, const std\+::string \&arr\+\_\+name, const std\+::string \&elem\+\_\+name)
+\begin{DoxyCompactList}\small\item\em parses std\+::string line to struct \doxylink{structvector_1_1Vector}{Vector} \end{DoxyCompactList}\item 
+\Hypertarget{namespacevector_a146adb527f79415967eadb54f8c98c10}\label{namespacevector_a146adb527f79415967eadb54f8c98c10} 
+\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} {\bfseries str\+\_\+to\+\_\+v} (const char \texorpdfstring{$\ast$}{*}line, const size\+\_\+t len, const std\+::string \&arr\+\_\+name, const std\+::string \&elem\+\_\+name)
+\begin{DoxyCompactList}\small\item\em overloading of str\+\_\+to\+\_\+v for char array \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespacevector_a12c437ee260babf75855d70f232515f0}{v\+\_\+to\+\_\+str}} (const \mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&vector, const std\+::string \&arr\+\_\+name, const std\+::string \&elem\+\_\+name)
+\begin{DoxyCompactList}\small\item\em forms xml line from \doxylink{structvector_1_1Vector}{Vector} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+Distributed under the MIT software license 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacevector_a9b0477fdacc345c82ce7048544aa2fc2}\label{namespacevector_a9b0477fdacc345c82ce7048544aa2fc2} 
+\index{vector@{vector}!append@{append}}
+\index{append@{append}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily void vector\+::append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&}]{vector,  }\item[{const int}]{value }\end{DoxyParamCaption})}
+
+
+
+pushes value to the end of vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & vector to expand \\
+\hline
+{\em value} & value to push \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & memory allocation error\\
+\hline
+\end{DoxyExceptions}
+Pushes value to the end of vector. Strong exception safety. \Hypertarget{namespacevector_a3219b40348e6b235c835ae7da213a8f5}\label{namespacevector_a3219b40348e6b235c835ae7da213a8f5} 
+\index{vector@{vector}!create@{create}}
+\index{create@{create}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} vector\+::create (\begin{DoxyParamCaption}\item[{const size\+\_\+t}]{len }\end{DoxyParamCaption})}
+
+
+
+creates struct \doxylink{structvector_1_1Vector}{Vector} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em len} & size of vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ptr to struct \doxylink{structvector_1_1Vector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & memory allocation error\\
+\hline
+\end{DoxyExceptions}
+Creates struct \doxylink{structvector_1_1Vector}{Vector}. If len == 0, field elems won\textquotesingle{}t be created \Hypertarget{namespacevector_a0c9705d65f9bd7780fdee6603d269fae}\label{namespacevector_a0c9705d65f9bd7780fdee6603d269fae} 
+\index{vector@{vector}!erase@{erase}}
+\index{erase@{erase}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void vector\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*}}]{vector }\end{DoxyParamCaption})}
+
+
+
+erases struct \doxylink{structvector_1_1Vector}{Vector} 
+
+Erases struct \doxylink{structvector_1_1Vector}{Vector}. Works properly if vector == nullptr. No-\/throw guarantee. \Hypertarget{namespacevector_afb600355d32cc7dc20aa5e2e31bfc89f}\label{namespacevector_afb600355d32cc7dc20aa5e2e31bfc89f} 
+\index{vector@{vector}!input@{input}}
+\index{input@{input}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void vector\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&}]{vector }\end{DoxyParamCaption})}
+
+
+
+fills vector with data 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & input stream \\
+\hline
+{\em os} & output stream \\
+\hline
+{\em vector} & vector to fill \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & memory allocation error\\
+\hline
+\end{DoxyExceptions}
+Reads numbers from input stream and append them to vector. Separator is \textquotesingle{}\textbackslash{}n\textquotesingle{}. Input ends with keyword "{}end"{} \begin{DoxySeeAlso}{See also}
+get\+\_\+num(), \doxylink{namespacevector_a9b0477fdacc345c82ce7048544aa2fc2}{append()} 
+\end{DoxySeeAlso}
+\Hypertarget{namespacevector_a754e5ffcf97a33ece642622e62cb1858}\label{namespacevector_a754e5ffcf97a33ece642622e62cb1858} 
+\index{vector@{vector}!str\_to\_v@{str\_to\_v}}
+\index{str\_to\_v@{str\_to\_v}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{str\_to\_v()}{str\_to\_v()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvector_1_1Vector}{Vector}} \texorpdfstring{$\ast$}{*} vector\+::str\+\_\+to\+\_\+v (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line,  }\item[{const std\+::string \&}]{arr\+\_\+name,  }\item[{const std\+::string \&}]{elem\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+parses std\+::string line to struct \doxylink{structvector_1_1Vector}{Vector} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & line to parse \\
+\hline
+{\em arr\+\_\+name} & html tag of arr (without \texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}) \\
+\hline
+{\em elem\+\_\+name} & html tag of elem (without \texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ptr to struct \doxylink{structvector_1_1Vector}{Vector} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & memory allocation error \\
+\hline
+{\em std\+::bad\+\_\+alloc} & memory allocation error\\
+\hline
+\end{DoxyExceptions}
+Parses xml line to struct \doxylink{structvector_1_1Vector}{Vector}. \Hypertarget{namespacevector_a12c437ee260babf75855d70f232515f0}\label{namespacevector_a12c437ee260babf75855d70f232515f0} 
+\index{vector@{vector}!v\_to\_str@{v\_to\_str}}
+\index{v\_to\_str@{v\_to\_str}!vector@{vector}}
+\doxysubsubsection{\texorpdfstring{v\_to\_str()}{v\_to\_str()}}
+{\footnotesize\ttfamily std\+::string vector\+::v\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvector_1_1Vector}{Vector}} \&}]{vector,  }\item[{const std\+::string \&}]{arr\+\_\+name,  }\item[{const std\+::string \&}]{elem\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+forms xml line from \doxylink{structvector_1_1Vector}{Vector} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & vector to form from \\
+\hline
+{\em arr\+\_\+name} & html\+\_\+tag of vector (without \texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}) \\
+\hline
+{\em elem\+\_\+name} & html\+\_\+tag of element (without \texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+xml\+\_\+line 
+\end{DoxyReturn}

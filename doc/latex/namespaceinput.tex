@@ -1,0 +1,56 @@
+\doxysection{input Namespace Reference}
+\hypertarget{namespaceinput}{}\label{namespaceinput}\index{input@{input}}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceinput_a1d1cd1a2a8af98cb1dab1150df3c9ffb}\label{namespaceinput_a1d1cd1a2a8af98cb1dab1150df3c9ffb} 
+using {\bfseries end\+\_\+code} = std\+::string
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{namespaceinput_a845677f299de3bfab0a62d19fe6a008c}\label{namespaceinput_a845677f299de3bfab0a62d19fe6a008c} 
+void {\bfseries clear\+\_\+stream} (std\+::istream \&is)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{namespaceinput_a87651fce1b6b89cc95f46486c9105660}{get\+\_\+num}} (std\+::istream \&is, std\+::ostream \&os, T min=std\+::numeric\+\_\+limits$<$ T $>$\+::lowest(), T max=std\+::numeric\+\_\+limits$<$ T $>$\+::max(), const std\+::string \&prompt="{}"{})
+\begin{DoxyCompactList}\small\item\em gets bounded number from input stream \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+Distributed under the MIT software license 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceinput_a87651fce1b6b89cc95f46486c9105660}\label{namespaceinput_a87651fce1b6b89cc95f46486c9105660} 
+\index{input@{input}!get\_num@{get\_num}}
+\index{get\_num@{get\_num}!input@{input}}
+\doxysubsubsection{\texorpdfstring{get\_num()}{get\_num()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T input\+::get\+\_\+num (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{std\+::ostream \&}]{os,  }\item[{T}]{min = {\ttfamily std\+:\+:numeric\+\_\+limits$<$T$>$\+:\+:lowest()},  }\item[{T}]{max = {\ttfamily std\+:\+:numeric\+\_\+limits$<$T$>$\+:\+:max()},  }\item[{const std\+::string \&}]{prompt = {\ttfamily "{}"{}} }\end{DoxyParamCaption})}
+
+
+
+gets bounded number from input stream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & input stream \\
+\hline
+{\em os} & output stream \\
+\hline
+{\em min} & lower bound of range \\
+\hline
+{\em max} & upper bound of range \\
+\hline
+{\em prompt} & sends message in output stream Function gets type T number from input stream. Number could be bounded with params min and max \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if EOF signal catched or input stream is bad \\
+\hline
+{\em input\+::end\+\_\+code} & end input, but continue program running (might be used to exit from loop) \\
+\hline
+\end{DoxyExceptions}

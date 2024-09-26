@@ -1,0 +1,30 @@
+\chapter{Introduction to c++}
+\hypertarget{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme}{}\label{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme}\index{Introduction to c++@{Introduction to c++}}
+\label{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme_autotoc_md0}%
+\Hypertarget{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme_autotoc_md0}%
+ \hypertarget{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme_autotoc_md1}{}\doxysection{\texorpdfstring{Option no.\+3}{Option no.3}}\label{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme_autotoc_md1}
+Implement a set of functions for converting an array of integers to an xml format string and back.
+
+An array of integers, the name of the array and the tag of the array element are passed to the input of the function.
+
+The vector to string conversion function should return a string in xml format.
+
+The string to vector conversion function must receive a string representation of the array as input and return the original array.
+
+For example, an array of numbers 1,2,3 with the array name "{}array"{} and the element tag "{}value"{} must be converted to the string "{}$<$array$>$$<$value$>$1$<$/value$>$$<$value$>$2$<$/value$>$$<$value$>$3$<$/value$>$$<$/array$>$"{}.
+
+Implement 3 overloads of the described functions\+:
+\begin{DoxyEnumerate}
+\item Works with a null-\/terminated string (const char\texorpdfstring{$\ast$}{*}).
+\item Works with an array of characters and their number (const char\texorpdfstring{$\ast$}{*} + size\+\_\+t).
+\item Works with an instance of the std\+::string class
+\end{DoxyEnumerate}\hypertarget{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme_autotoc_md2}{}\doxysection{\texorpdfstring{How to compile}{How to compile}}\label{md__2home_2students_2m_2malakhov_8am_2oop2024_21_2Readme_autotoc_md2}
+Go to project root directory {\ttfamily cd your/abs/path/1}
+
+Then run cmake {\ttfamily cmake -\/B ./build/}
+
+Go to build directory \textquotesingle{}cd ./build/\textquotesingle{}
+
+Finally, run make {\ttfamily make}
+
+main program called "{}program"{} will appear in build directory. tests program will appear in build/tests/ directory. 

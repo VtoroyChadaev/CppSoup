@@ -1,0 +1,44 @@
+\doxysection{vector.\+hpp}
+\hypertarget{vector_8hpp_source}{}\label{vector_8hpp_source}\index{/home/students/m/malakhov.am/oop2024/1/src/vector/vector.hpp@{/home/students/m/malakhov.am/oop2024/1/src/vector/vector.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ VECTOR\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ VECTOR\_HPP}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cstddef>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacevector}{vector}}\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ \{}
+\DoxyCodeLine{00010\ \ \ std::size\_t\ len\ =\ 0;}
+\DoxyCodeLine{00011\ \ \ \textcolor{keywordtype}{int}\ *elems\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00022\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ *\mbox{\hyperlink{namespacevector_a3219b40348e6b235c835ae7da213a8f5}{create}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ len);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespaceinput}{input}}(std::istream\ \&is,\ std::ostream\ \&os,\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ \&\mbox{\hyperlink{namespacevector}{vector}});}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacevector_a9b0477fdacc345c82ce7048544aa2fc2}{append}}(\mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ \&\mbox{\hyperlink{namespacevector}{vector}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ value);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ print(std::ostream\ \&os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ \&\mbox{\hyperlink{namespacevector}{vector}});}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespacevector_a0c9705d65f9bd7780fdee6603d269fae}{erase}}(\mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ *\mbox{\hyperlink{namespacevector}{vector}});}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00057\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ *\mbox{\hyperlink{namespacevector_afdafb7e34a5b503dd3ce50b8b29ddd25}{str\_to\_v}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *line,\ \textcolor{keyword}{const}\ std::string\ \&arr\_name,}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&elem\_name);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00070\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ *\mbox{\hyperlink{namespacevector_afdafb7e34a5b503dd3ce50b8b29ddd25}{str\_to\_v}}(\textcolor{keyword}{const}\ std::string\ \&line,\ \textcolor{keyword}{const}\ std::string\ \&arr\_name,}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&elem\_name);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ *\mbox{\hyperlink{namespacevector_afdafb7e34a5b503dd3ce50b8b29ddd25}{str\_to\_v}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *line,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{size\_t}\ len,\ \textcolor{keyword}{const}\ std::string\ \&arr\_name,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&elem\_name);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00083\ std::string\ \mbox{\hyperlink{namespacevector_a12c437ee260babf75855d70f232515f0}{v\_to\_str}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structvector_1_1Vector}{Vector}}\ \&\mbox{\hyperlink{namespacevector}{vector}},\ \textcolor{keyword}{const}\ std::string\ \&arr\_name,}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&elem\_name);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \}\ \textcolor{comment}{//\ namespace\ vector}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
