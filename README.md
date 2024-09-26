@@ -15,7 +15,7 @@ return the original array.
 For example, an array of numbers 1,2,3 with the array name "array" and the element tag "value" must
 be converted to the string `<array><value>1</value><value>2</value><value>3</value></array>`.
 
-Implement 3 overloads of the described functions:
+Implemented 3 overloads of the described functions:
 1. Works with a null-terminated string (const char*).
 2. Works with an array of characters and their number (const char* + size_t).
 3. Works with an instance of the std::string class
