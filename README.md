@@ -1,9 +1,7 @@
 # CppSoup
 Xml <-----> Vector
 
-# Introduction to c++
-
-## Option no.3
+# Introduction
 
 Implement a set of functions for converting an array of integers to an xml format string and back.
 
