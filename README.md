@@ -1,7 +1,7 @@
 # CppSoup
 Xml <-----> Vector
 
-# Introduction
+## Introduction
 
 Implement a set of functions for converting an array of integers to an xml format string and back.
 
@@ -37,14 +37,17 @@ Go to build directory
 Finally, run make
 `make`
 
-main program called "program" will appear in build directory.
-tests program will appear in build/tests/ directory.
+Main program called "program" will appear in build directory.
+Tests program will appear in build/tests/ directory.
 
 ## How to test
-1. Compile executables (w. How to compile)
-2. Run tests
+### 1. Compile executables 
+(w. How to compile)
+### 2. Run tests
 `./build/tests/tests_program`
-3. Create coverage report
-`mkdir tests/report` --creating directory for report files
+### 3. Create coverage report
+Creating directory for report files
+`mkdir tests/report`
+Running gcovr
 `gcovr -e build/CMakeFiles/ --html-details -o tests/report/coverage.html`
 report files wil be in `./tests/report` directory
