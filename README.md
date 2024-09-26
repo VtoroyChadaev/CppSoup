@@ -48,6 +48,8 @@ Tests program will appear in build/tests/ directory.
 ### 3. Create coverage report
 Creating directory for report files
 `mkdir tests/report`
+
 Running gcovr
 `gcovr -e build/CMakeFiles/ --html-details -o tests/report/coverage.html`
+
 report files wil be in `./tests/report` directory
