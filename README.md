@@ -27,11 +27,14 @@ Implement 3 overloads of the described functions:
 Go to project root directory
 `cd your/abs/path/CppSoup`
 
+Create build directory
+`mkdir build`
+
 Then run cmake
 `cmake -B ./build/`
 
 Go to build directory
-'cd ./build/'
+`cd ./build/`
 
 Finally, run make
 `make`
@@ -39,3 +42,11 @@ Finally, run make
 main program called "program" will appear in build directory.
 tests program will appear in build/tests/ directory.
 
+## How to test
+1. Compile executables (w. How to compile)
+2. Run tests
+`./build/tests/tests_program`
+3. Create coverage report
+`mkdir tests/report` --creating directory for report files
+`gcovr -e build/CMakeFiles/ --html-details -o tests/report/coverage.html`
+report files wil be in `./tests/report` directory
