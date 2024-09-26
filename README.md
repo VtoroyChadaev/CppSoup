@@ -13,7 +13,7 @@ The string to vector conversion function must receive a string representation of
 return the original array.
 
 For example, an array of numbers 1,2,3 with the array name "array" and the element tag "value" must
-be converted to the string "<array><value>1</value><value>2</value><value>3</value></array>".
+be converted to the string `<array><value>1</value><value>2</value><value>3</value></array>`.
 
 Implement 3 overloads of the described functions:
 1. Works with a null-terminated string (const char*).
