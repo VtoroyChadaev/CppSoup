@@ -40,8 +40,8 @@ Go to build directory
 Finally, run make
 `make`
 
-Main program called "program" will appear in `cppsoup/build` directory.
-Tests program will appear in `cppsoup/build/tests/` directory.
+Main program called "program" will appear in `CppSoup/build` directory.
+Tests program will appear in `CppSoup/build/tests/` directory.
 
 ## How to test
 ### 1. Compile executables 
