@@ -22,6 +22,9 @@ Implemented 3 overloads of the described functions:
 
 ## How to compile
 
+Clone project repository
+`git clone https://github.com/VtoroyChadaev/CppSoup.git`
+
 Go to project root directory
 `cd your/abs/path/CppSoup`
 
@@ -37,8 +40,8 @@ Go to build directory
 Finally, run make
 `make`
 
-Main program called "program" will appear in build directory.
-Tests program will appear in build/tests/ directory.
+Main program called "program" will appear in `build` directory.
+Tests program will appear in `build/tests/` directory.
 
 ## How to test
 ### 1. Compile executables 
@@ -46,10 +49,10 @@ Tests program will appear in build/tests/ directory.
 ### 2. Run tests
 `./build/tests/tests_program`
 ### 3. Create coverage report
-Creating directory for report files
+Create directory for report files
 `mkdir tests/report`
 
-Running gcovr
+Run gcovr
 `gcovr -e build/CMakeFiles/ --html-details -o tests/report/coverage.html`
 
 report files wil be in `./tests/report` directory
