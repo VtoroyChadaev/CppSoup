@@ -40,13 +40,18 @@ Go to build directory
 Finally, run make
 `make`
 
-Main program called "program" will appear in `build` directory.
-Tests program will appear in `build/tests/` directory.
+Main program called "program" will appear in `cppsoup/build` directory.
+Tests program will appear in `cppsoup/build/tests/` directory.
 
 ## How to test
 ### 1. Compile executables 
 (w. How to compile)
 ### 2. Run tests
+
+Go to project root directory
+`cd your/abs/path/CppSoup`
+
+Run tests program
 `./build/tests/tests_program`
 ### 3. Create coverage report
 Create directory for report files
