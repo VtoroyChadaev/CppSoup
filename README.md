@@ -20,7 +20,7 @@ Implemented 3 overloads of the described functions:
 2. Works with an array of characters and their number (const char* + size_t).
 3. Works with an instance of the std::string class
 
-## How to compile
+## How to compile project
 
 Clone project repository
 `git clone https://github.com/VtoroyChadaev/CppSoup.git`
