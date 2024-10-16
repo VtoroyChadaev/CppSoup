@@ -61,3 +61,13 @@ Run gcovr
 `gcovr -e build/CMakeFiles/ --html-details -o tests/report/coverage.html`
 
 report files wil be in `./tests/report` directory
+
+## How to compile documentation
+
+Go to project doc directory
+`cd your/abs/path/CppSoup/doc`
+
+Run doxygen
+'doxygen Doxyfile.in`
+
+Compiled documentation will appear in `html` and `latex` directories
